@@ -1,4 +1,4 @@
-# nodejs
+# docker-node
 
 This is a microservice
 to test deployment scenarios
@@ -12,3 +12,4 @@ or
 
     docker stack deploy -c docker-compose.yml node
 
+Currently it just does the "Hello, world" thing on port 5001.
