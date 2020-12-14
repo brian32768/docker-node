@@ -1,0 +1,17 @@
+version: '3.6'
+networks:
+  proxy_net:
+    name: proxy_net
+    external: true
+    
+services:
+  node:
+    image: wildsong/node:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      proxy_net:
+        aliases:
+          - hello
+          - nodeserver
